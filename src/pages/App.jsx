@@ -1,4 +1,7 @@
 import React from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import '../style.css'
+import Layout from '../components/Layout'
 
 /*
     * General mockup of the App component
@@ -13,8 +16,10 @@ import React from 'react'
 
 export default function App() {
     return (
-        <main>
+        <Router>
+            <Route path='/' element={<Layout />}>
 
-        </main>
+            </Route>
+        </Router>
     )
 }
