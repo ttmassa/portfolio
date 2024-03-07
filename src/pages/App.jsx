@@ -1,7 +1,11 @@
 import React from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import '../style.css'
 import Layout from '../components/Layout'
+import Home from './Home'
+import Works from './Works'
+import About from './About'
+import Contact from './Contact'
 
 /*
     * General mockup of the App component
@@ -17,9 +21,14 @@ import Layout from '../components/Layout'
 export default function App() {
     return (
         <Router>
-            <Route path='/' element={<Layout />}>
-
-            </Route>
+            <Routes >
+                <Route path='/' element={<Layout />}>
+                    <Route index element={<Home />}/>
+                    <Route path='works' element={<Works />}/>
+                    <Route path='about' element={<About />}/>
+                    <Route path='contact' element={<Contact />}/>
+                </Route>
+            </Routes>
         </Router>
     )
 }

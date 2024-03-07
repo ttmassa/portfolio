@@ -5,6 +5,56 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
     background-color: #1A1A1A;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Header */
+
+.header--page {
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 6vh;
+}
+
+.header--title {
+    border: 1px solid #2E8B57;
+    font-size: 36px;
+    font-weight: 900;
+    color: #2E8B57;
+    text-decoration: none;
+}
+
+.header--page > nav {
+    border: 1px solid #2E8B57;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3vh;
+}
+
+.header--link {
+    font-size: 18px;
+    font-weight: 500;
+    color: #D3D3D3;
+    text-decoration: none;
+}
+
+.header--link:hover {
+    text-decoration: underline;
+}
+
+.selected {
+    color: #2E8B57;
+    font-size: 18px;
+    text-decoration: underline;
 }
