@@ -21,14 +21,16 @@ import Contact from './Contact'
 export default function App() {
     return (
         <Router>
-            <Routes >
-                <Route path='/' element={<Layout />}>
-                    <Route index element={<Home />}/>
-                    <Route path='works' element={<Works />}/>
-                    <Route path='about' element={<About />}/>
-                    <Route path='contact' element={<Contact />}/>
-                </Route>
-            </Routes>
+            <div className='main--container'>
+                <Routes >
+                    <Route path='/' element={<Layout />}>
+                        <Route index element={<Home />}/>
+                        <Route path='works' element={<Works />}/>
+                        <Route path='about' element={<About />}/>
+                        <Route path='contact' element={<Contact />}/>
+                    </Route>
+                </Routes>
+            </div>
         </Router>
     )
 }
