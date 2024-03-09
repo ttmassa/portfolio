@@ -6,6 +6,7 @@ import Home from './Home'
 import Works from './Works'
 import About from './About'
 import Contact from './Contact'
+import ProjectDetail from './ProjectDetail'
 
 /*
     * General mockup of the App component
@@ -28,6 +29,7 @@ export default function App() {
                         <Route path='works' element={<Works />}/>
                         <Route path='about' element={<About />}/>
                         <Route path='contact' element={<Contact />}/>
+                        <Route path='works/:projectId' element={<ProjectDetail />}/>
                     </Route>
                 </Routes>
             </div>
