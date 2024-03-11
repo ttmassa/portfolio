@@ -153,6 +153,7 @@ body::-webkit-scrollbar {
     flex-direction: column;
     gap: 5vh;
     align-items: center;
+    margin-bottom: 10vh;
 }
 
 .project--container > h2 {
@@ -173,12 +174,32 @@ body::-webkit-scrollbar {
     max-width: 50%;
     max-height: 40vh;
     align-self: flex-start;
+    border-radius: 5px;
 }
 
 .project--top > p {
     margin: 0 auto 0 auto;
     text-align: justify;
 
+}
+
+.project--container > button {
+    padding: 2vh 30vh;
+    font-size: 16px;
+    font-weight: 500;
+    color: #1A1A1A;
+    background-color: #2E8B57;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+    margin-top: auto;
+}
+
+.project--container > button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 0 #2E8B57;
+    color: #1A1A1A;
 }
 
 /* Media queries */
