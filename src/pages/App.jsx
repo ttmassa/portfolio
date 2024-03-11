@@ -6,7 +6,7 @@ import Home from './Home'
 import Works from './Works'
 import About from './About'
 import Contact from './Contact'
-import ProjectDetail from './ProjectDetail'
+import Project from './Project'
 
 /*
     * General mockup of the App component
@@ -26,10 +26,11 @@ export default function App() {
                 <Routes >
                     <Route path='/' element={<Layout />}>
                         <Route index element={<Home />}/>
-                        <Route path='works' element={<Works />}/>
+                        <Route path='works' element={<Works />}>
+                            <Route path=':projectId' element={<Project />}/>
+                        </Route>
                         <Route path='about' element={<About />}/>
                         <Route path='contact' element={<Contact />}/>
-                        <Route path='works/:projectId' element={<ProjectDetail />}/>
                     </Route>
                 </Routes>
             </div>

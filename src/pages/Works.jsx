@@ -1,34 +1,19 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
-import projects  from '../data/projects/data'
-import Project from '../components/Project'
+import { NavLink, Outlet } from 'react-router-dom'
 
 export default function Works() {
-    const [project, setProject] = useState(projects)
-
-    useEffect(() => {
-        setProject(projects)
-    }, [])
-
-    const projectList = project.map(project => {
-        return (
-            <Project 
-                key={project.id}
-                id={project.id}
-                name={project.name}
-                description={project.description}
-                image={project.image}
-                languages={project.languages}
-                link={project.link}
-            />
-        )
-    })
     
     return (
         <section className='works--page'>
-            <div className='works--projects'>
-                {projectList}
-            </div>
+            <ul>
+                <NavLink className='works--title' index to='1'>File encryption</NavLink>
+                <NavLink className='works--title' to='2'>Currency converter</NavLink>
+                <NavLink className='works--title' to='3'>Tenzies game</NavLink>
+                <NavLink className='works--title' to='4'>Balasido</NavLink>
+                <NavLink className='works--title' to='5'>To-do list manager</NavLink>
+                <NavLink className='works--title' to='6'>#Van Life</NavLink>
+            </ul>
+            <Outlet />
         </section>
     )
 }
