@@ -7,6 +7,7 @@ import Works from './Works'
 import About from './About'
 import Contact from './Contact'
 import Project from './Project'
+import ProjectIntro from '../components/ProjectIntro'
 
 /*
     * General mockup of the App component
@@ -27,6 +28,7 @@ export default function App() {
                     <Route path='/' element={<Layout />}>
                         <Route index element={<Home />}/>
                         <Route path='works' element={<Works />}>
+                            <Route index element={<ProjectIntro />}/>
                             <Route path=':projectId' element={<Project />}/>
                         </Route>
                         <Route path='about' element={<About />}/>

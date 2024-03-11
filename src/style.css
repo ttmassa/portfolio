@@ -130,7 +130,7 @@ body::-webkit-scrollbar {
     flex-direction: column;
     gap: 5vh;
     list-style: none;
-    padding-right: 5vh;
+    padding-right: 15vh;
 }
 
 .works--title {
@@ -138,10 +138,33 @@ body::-webkit-scrollbar {
     font-weight: 900;
     text-decoration: none;
     transition: transform 0.3s ease;
+    width: calc(100% + 9vh);
 }
 
 .works--title:hover {
     transform: scale(1.05);
+}
+
+/* Project Intro */
+
+.project-intro--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15vh auto auto auto;
+}
+
+.project-intro--container > h1 {
+    color: #2E8B57;
+    font-size: 50px;
+    padding: 2vh;
+}
+
+.project-intro--container > p {
+    color: #D3D3D3;
+    font-size: 18px;
+    text-align: justify;
 }
 
 /* Project */
@@ -206,6 +229,8 @@ body::-webkit-scrollbar {
 
 /* Small computer */
 @media (max-width: 1100px) {
+    /* Work */
+
     /* Project */
     .project--top {
         flex-direction: column;
@@ -219,6 +244,6 @@ body::-webkit-scrollbar {
     }
 
     .project--container > button {
-        padding: 2vh 20vh;
+        padding: 2vh 10vh;
     }
 }
