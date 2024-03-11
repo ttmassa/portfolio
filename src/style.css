@@ -171,7 +171,6 @@ body::-webkit-scrollbar {
 .project-intro--container > h1 {
     color: #2E8B57;
     font-size: 50px;
-    padding: 2vh;
 }
 
 .project-intro--container > p {
@@ -334,12 +333,24 @@ body::-webkit-scrollbar {
         padding: 2vh 10vh;
     }
 
+    /* Project Intro */
+
+    .project-intro--container {
+        margin: 5vh auto auto 5vh;
+        gap: 5vh;
+    }
+
+    .project-intro--container > h1 {
+        font-size: 40px;
+    }
+
     /* About */
     .about--intro > p {
-        max-width: 70%;
+        max-width: 100%;
     }
 
     .about--skills {
-        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
