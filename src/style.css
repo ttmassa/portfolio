@@ -217,4 +217,8 @@ body::-webkit-scrollbar {
     .project--top > img {
         max-width: 100%;
     }
+
+    .project--container > button {
+        padding: 2vh 20vh;
+    }
 }
