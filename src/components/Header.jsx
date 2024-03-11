@@ -22,13 +22,25 @@ export default function Header() {
                 >
                     About
                 </NavLink>
+                
+                <div>
+                    <a 
+                        className='header--contact'
+                        href='https://github.com/ttmassa' 
+                        target='blank'
+                    >
+                        <img src='/assets/github_logo.png' alt='github logo'/>
+                    </a>
 
-                <NavLink 
-                    className={({ isActive }) => isActive ? "selected" : "header--link"}
-                    to="/contact"
-                >
-                    Contact me
-                </NavLink>
+                    <a 
+                        className='header--contact'
+                        href='https://www.linkedin.com/in/timoth%C3%A9e-massa-88bbbb278/' 
+                        target='blank'
+                    >
+                        <img src='/assets/linkedin_logo.png' alt='github logo'/>
+                    </a>
+
+                </div>
             </nav>
         </header>   
     )

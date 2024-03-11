@@ -71,6 +71,18 @@ body::-webkit-scrollbar {
     text-decoration: underline;
 }
 
+.header--page > nav > div {
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
+}
+
+.header--contact > img {
+    max-width: 6vh;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
 /* Home */
 
 .home--page {
