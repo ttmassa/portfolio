@@ -218,7 +218,31 @@ body::-webkit-scrollbar {
 
 }
 
-.project--container > button {
+.project--nav {
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5vh;
+    width: 70%;
+}
+
+.project--arrow {
+    color: #D3D3D3;
+    font-size: 40px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project--arrow:first-child:hover {
+    transform: translateX(-5px);
+}
+
+.project--arrow:last-child:hover {
+    transform: translateX(5px);
+}
+
+.project--container button {
     padding: 2vh 30vh;
     font-size: 16px;
     font-weight: 500;
@@ -228,7 +252,6 @@ body::-webkit-scrollbar {
     border-radius: 5px;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
-    margin-top: auto;
 }
 
 .project--container > button:hover {
