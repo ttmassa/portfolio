@@ -338,6 +338,37 @@ body::-webkit-scrollbar {
 
 /* Small computer */
 @media (max-width: 1100px) {
+    /* Layout */
+
+    .main--container > * {
+        padding-inline: 5vh;
+    }
+
+    /* Header */
+
+    .header--page {
+        height: 15vh;
+    }
+
+    .header--logo {
+        width: 60px;
+    }
+
+    .header--page > nav {
+        gap: 3vh;
+    }
+
+    .header--page > nav > div {
+        gap: 1.5vh;
+    }
+    
+
+    /* Home */
+
+    .home--page > p {
+        max-width: 75%;
+    }    
+
     /* Work */
 
     /* Project */
