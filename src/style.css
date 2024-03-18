@@ -206,8 +206,7 @@ body::-webkit-scrollbar {
 
 .project--top > img {
     cursor: pointer;
-    max-width: 50%;
-    max-height: 40vh;
+    width: 50%;
     align-self: flex-start;
     border-radius: 5px;
     transition: transform 0.3s ease;
@@ -397,18 +396,25 @@ body::-webkit-scrollbar {
 
     /* Work */
 
-    .works--page > ul {
+    .works--page > div > ul {
         font-size: 15px;
         border-right: 1px solid #D3D3D3;
         display: flex;
         flex-direction: column;
-        gap: 4vh;
+        gap: 3vh;
         list-style: none;
         padding-right: 10vh;
     }    
 
 
     /* Project */
+
+    .project--container {
+        gap: 2vh;
+        margin-bottom: 3vh;
+    }
+
+
     .project--top {
         flex-direction: column;
         text-align: center;
@@ -416,12 +422,23 @@ body::-webkit-scrollbar {
         font-size: 15px;
     }
 
-    .project--top > img {
-        max-width: 100%;
+    .project--container > h2 {
+        padding: 1vh 0;
     }
 
-    .project--container > button {
-        padding: 2vh 10vh;
+    .project--top > img {
+        width: 100%;
+        align-self: center;
+    }
+
+    .project--top > div > p {
+        font-size: 13px;
+    }
+
+    .project--nav > button {
+        padding: 2vh;
+        font-size: 14px;
+        flex: 1;
     }
 
     /* Project Intro */

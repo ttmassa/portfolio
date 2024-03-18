@@ -20,10 +20,15 @@ export default function Project() {
 
   return (
     <section className='project--container'>
+
       <h2>{project.name}</h2>
+
       <div className='project--top'>
+
         <img src={project.image} alt='project screenshot' />
+        
         <div>
+
           <p>{project.description}</p>
           <div>
             <ul className='project--languages'>
@@ -32,13 +37,17 @@ export default function Project() {
               ))}
             </ul>
           </div>
+          
         </div>
+
       </div>
+
       <div className='project--nav'>
         {<Link className='project--arrow' to={leftArrowDestination}>&larr;</Link>}
         <button onClick={handleButtonClick}>Visit Github repository</button>
         {<Link className='project--arrow' to={rightArrowDestination}>&rarr;</Link>}
       </div>
+
     </section>
   );
 }
