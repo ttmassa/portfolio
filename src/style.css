@@ -171,13 +171,14 @@ body::-webkit-scrollbar {
 .project-intro--container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    margin: 10vh auto;
 }
 
 .project-intro--container > h1 {
     color: #2E8B57;
     font-size: 50px;
+    font-weight: 900;
 }
 
 .project-intro--container > p {
