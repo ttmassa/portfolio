@@ -14,7 +14,7 @@ export default function About() {
                     where I tried to create a video game
                     with my friends. Update: it's still my
                     first real project to date and you can
-                    find it in the Work section .Since then, 
+                    find it in the Work section! <br /> Since then, 
                     my interest in software development has
                     only grown and I have been learning and
                     experimenting with different technologies
@@ -25,30 +25,13 @@ export default function About() {
                 </p>
             </div>
 
-            <div className='about--skills'>
-                <h2>Skills</h2>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>Node.js</li>
-                    <li>Typescript</li>
-                    <li>MySql</li>
-                    <li>Java</li>
-                    <li>C</li>
-                    <li>Git</li>
-                    <li>JavaFx</li>
-                </ul>
-            </div>
-
-            <div className='about--github'>
+            <div className='about--download'>
                 <a 
                     className='about--cv' 
-                    href='https://github.com/ttmassa'
+                    href='./assets/CV.pdf'
                     target='blank'
                 >
-                    Visit my GitHub
+                    ↓ curriculum vitae
                 </a>
             </div>
         </main>

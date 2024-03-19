@@ -10,7 +10,7 @@ const projects = [
     },
     {
         id: 2,
-        name: 'Currency converter',
+        name: 'Precision Purse',
         summary: 'Real-time currency converter using Java and JavaFX. It uses the free API from openexchangerates.org.',
         description: 'Discover a streamlined currency conversion experience with the Java Currency Converter, a Java-based application featuring an intuitive JavaFX graphic interface. Utilizing real-time exchange rates from the openexchangerates.org free API, this app simplifies the conversion process. Select your desired currencies from a drag-and-drop list, input the amount, and instantly view the converted result in the adjacent text field. With a swift and user-friendly design, this currency converter offers speed and simplicity in every conversion. The project is also Maven-enabled, ensuring seamless management of dependencies and efficient build processes.',
         image: '/assets/currency-converter_image.png',
