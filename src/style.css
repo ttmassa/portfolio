@@ -172,7 +172,7 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10vh auto;
+    margin: 10vh auto;  
 }
 
 .project-intro--container > h1 {
@@ -185,6 +185,78 @@ body::-webkit-scrollbar {
     color: #D3D3D3;
     font-size: 18px;
     text-align: justify;
+}
+
+/* Play button */
+
+.container {
+    width: 100%;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.circle {
+    stroke: #2E8B57;
+    stroke-dasharray: 650;
+    stroke-dashoffset: 650;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    opacity: 0.3;
+}
+
+.playBut {
+    /*  border: 1px solid red;*/
+    display: inline-block;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+    .triangle {
+        -webkit-transition: all 0.7s ease-in-out;
+        transition: all 0.7s ease-in-out;
+        stroke-dasharray: 240;
+        stroke-dashoffset: 480;
+        stroke: #000;
+        transform: translateY(0)
+    }
+
+
+    &:hover {
+
+        .triangle {
+            stroke-dashoffset: 0;
+            opacity: 1;
+            stroke: #2E8B57;
+            animation: nudge 0.7s ease-in-out;
+
+            @keyframes nudge {
+                0% {
+                    transform: translateX(0)
+                }
+
+                30% {
+                    transform: translateX(-5px)
+                }
+
+                50% {
+                    transform: translateX(5px)
+                }
+
+                70% {
+                    transform: translateX(-2px)
+                }
+
+                100% {
+                    transform: translateX(0)
+                }
+            }
+        }
+
+        .circle {
+            stroke-dashoffset: 0;
+            opacity: 1;
+        }
+
+    }
 }
 
 /* Project */
@@ -435,6 +507,16 @@ body::-webkit-scrollbar {
 
     .project-intro--container > h1 {
         font-size: 40px;
+        text-align: center;
+    }
+
+    .project-intro--container > p {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .container {
+        margin-top: 5vh;
     }
 
     /* About */
