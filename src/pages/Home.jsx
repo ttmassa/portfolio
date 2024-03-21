@@ -1,7 +1,8 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
+
     return (
         <main className='home--page'>
             <h1>Welcome</h1>
@@ -27,7 +28,8 @@ export default function Home() {
                     to="about"
                 >
                     More about me
-                </Link>            </div>
+                </Link>
+            </div>
         </main>
-    )
+    );
 }

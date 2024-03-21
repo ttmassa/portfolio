@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import '../style.css'
 import Layout from '../components/Layout'
@@ -20,6 +21,19 @@ import ProjectIntro from '../components/ProjectIntro'
 */
 
 export default function App() {
+    
+    useEffect(() => {
+
+        if (!localStorage.getItem('visited')) {
+            // Set visited flag
+            localStorage.setItem('visited', true);
+        }
+    }, []);
+
+    window.onunload = () => {
+        localStorage.removeItem('visited')
+    }
+
     return (
         <Router>
             <div className='main--container'>
