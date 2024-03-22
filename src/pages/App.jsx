@@ -1,5 +1,5 @@
 import React from 'react'
-import { useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import '../style.css'
 import Layout from '../components/Layout'
@@ -21,6 +21,7 @@ import ProjectIntro from '../components/ProjectIntro'
 */
 
 export default function App() {
+    const [lightMode, setLightMode] = useState(false)
     
     useEffect(() => {
 
@@ -28,18 +29,24 @@ export default function App() {
             // Set visited flag
             localStorage.setItem('visited', true);
         }
+
+        console.log(lightMode)
     }, []);
 
     window.onunload = () => {
         localStorage.removeItem('visited')
     }
 
+    function toogleMode() {
+        setLightMode(prevMode => !prevMode)
+    }
+
     return (
         <Router>
             <div className='main--container'>
                 <Routes >
-                    <Route path='/' element={<Layout />}>
-                        <Route index element={<Home />}/>
+                    <Route path='/' element={<Layout toogleMode={toogleMode}/>}>
+                        <Route index element={<Home toogleMode={toogleMode}/>}/>
                         <Route path='works' element={<Works />}>
                             <Route index element={<ProjectIntro />}/>
                             <Route path=':projectId' element={<Project />}/>

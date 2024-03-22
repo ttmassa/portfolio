@@ -30,6 +30,10 @@ export default function Home() {
                     More about me
                 </Link>
             </div>
+            <label className="toggle-switch">
+                <input type="checkbox"/>
+                <span className="slider round"></span>
+            </label>
         </main>
     );
 }
