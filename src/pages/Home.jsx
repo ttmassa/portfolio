@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function Home() {
+export default function Home({ toggleMode, mode }) {
 
     return (
         <main className='home--page'>
@@ -31,7 +31,7 @@ export default function Home() {
                 </Link>
             </div>
             <label className="toggle-switch">
-                <input type="checkbox"/>
+                <input type="checkbox" checked={mode} onChange={toggleMode}/>
                 <span className="slider round"></span>
             </label>
         </main>
