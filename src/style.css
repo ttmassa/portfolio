@@ -304,7 +304,7 @@ input:checked + .slider:before {
     transition: all 0.7s ease-in-out;
     stroke-dasharray: 240;
     stroke-dashoffset: 480;
-    stroke: #000;
+    stroke: var(--main-text-color);
     transform: translateY(0);
   }
 
