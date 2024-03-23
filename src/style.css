@@ -167,13 +167,19 @@ input:checked + .slider:before {
 .header--page > nav > div {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 2vh;
 }
 
 .header--contact > img {
-  max-width: 6vh;
+  width: 6vh;
   cursor: pointer;
   transition: transform 0.3s ease;
+}
+
+.header--contact:last-child > img {
+  width: 4.8vh;
+  margin-left: 0.4vw;
 }
 
 /* Home */

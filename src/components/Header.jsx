@@ -40,6 +40,14 @@ export default function Header() {
                         <img src='/assets/linkedin_logo.png' alt='github logo'/>
                     </a>
 
+                    <a
+                        className='header--contact'
+                        href='mailto:timothee.massa.perso@gmail.com'
+                        target='blank'
+                    >
+                        <img src='/assets/email_logo.png' alt='email logo'/>
+                    </a>
+
                 </div>
             </nav>
         </header>   
