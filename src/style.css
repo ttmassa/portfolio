@@ -238,17 +238,19 @@ input:checked + .slider:before {
 .works--page > ul {
   display: flex;
   flex-direction: column;
-  gap: 5vh;
+  gap: 4vh;
   list-style: none;
   padding-right: 15vh;
+  margin-top: 5vh;
 }
 
 .works--title {
+  font-family: "Permanent Marker", cursive;
   color: #2e8b57;
   font-weight: 900;
   text-decoration: none;
   transition: transform 0.3s ease;
-  width: calc(100% + 9vh);
+  width: calc(100% + 10vh);
 }
 
 .works--title:hover {
@@ -272,6 +274,7 @@ input:checked + .slider:before {
 }
 
 .project-intro--container > h1 {
+  font-family: "Permanent Marker", cursive;
   color: #2e8b57;
   font-size: 50px;
   font-weight: 900;
@@ -363,6 +366,7 @@ input:checked + .slider:before {
 }
 
 .project--container > h2 {
+  font-family: "Permanent Marker", cursive;
   color: #2e8b57;
   font-size: 40px;
   padding: 2vh;
