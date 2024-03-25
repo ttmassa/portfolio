@@ -29,7 +29,7 @@ export default function Header() {
                         href='https://github.com/ttmassa' 
                         target='blank'
                     >
-                        <img src='/assets/github_logo.png' alt='github logo'/>
+                        <img src='/assets/icon/github_logo.png' alt='github logo'/>
                     </a>
 
                     <a 
@@ -37,7 +37,7 @@ export default function Header() {
                         href='https://www.linkedin.com/in/timoth%C3%A9e-massa-88bbbb278/' 
                         target='blank'
                     >
-                        <img src='/assets/linkedin_logo.png' alt='github logo'/>
+                        <img src='/assets/icon/linkedin_logo.png' alt='github logo'/>
                     </a>
 
                     <a
@@ -45,7 +45,7 @@ export default function Header() {
                         href='mailto:timothee.massa.perso@gmail.com'
                         target='blank'
                     >
-                        <img src='/assets/email_logo.png' alt='email logo'/>
+                        <img src='/assets/icon/email_logo.png' alt='email logo'/>
                     </a>
 
                 </div>
