@@ -33,7 +33,7 @@ export default function App() {
         <Router>
             <div className={`main--container ${theme}`}>
                 <Routes>
-                    <Route path='/' element={<Layout toggleMode={toggleMode}/>}>
+                    <Route path='/' element={<Layout mode={lightMode} toggleMode={toggleMode}/>}>
                         <Route index element={<Home mode={lightMode} toggleMode={toggleMode}/>}/>
                         <Route path='works' element={<Works />}>
                             <Route index element={<ProjectIntro />}/>

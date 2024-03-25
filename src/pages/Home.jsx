@@ -30,10 +30,6 @@ export default function Home({ toggleMode, mode }) {
                     More about me
                 </Link>
             </div>
-            <label className="toggle-switch">
-                <input type="checkbox" checked={mode} onChange={toggleMode}/>
-                <span className="slider round"></span>
-            </label>
         </main>
     );
 }
