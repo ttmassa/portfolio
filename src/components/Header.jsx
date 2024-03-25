@@ -41,14 +41,19 @@ export default function Header() {
                     </a>
 
                     <a
-                        className='header--contact'
+                        className='header--contact email-icon'
                         href='mailto:timothee.massa.perso@gmail.com'
                         target='blank'
                     >
                         <img src='/assets/icon/email_logo.png' alt='email logo'/>
                     </a>
 
+                    <button className='gear-icon'>
+                        <img src='./assets/icon/gear_icon.png' alt='gear icon'/>
+                    </button>
+
                 </div>
+                
             </nav>
         </header>   
     )

@@ -168,6 +168,7 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: 2vh;
 }
 
@@ -177,9 +178,21 @@ input:checked + .slider:before {
   transition: transform 0.3s ease;
 }
 
-.header--contact:last-child > img {
+.email-icon > img {
   width: 4.8vh;
-  margin-left: 0.4vw;
+  margin: 0 0.4vw;
+}
+
+.gear-icon {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.gear-icon > img {
+  width: 5.68vh;
+  margin-top: 0.075vh;
+  transition: transform 0.3s ease;
 }
 
 /* Home */
